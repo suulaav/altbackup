@@ -47,8 +47,7 @@ func waitForCallback(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Error exchanging code for token", http.StatusInternalServerError)
 		log.Fatalf("Error exchanging code for token: %v", err)
 	}
-	fmt.Fprintf(w, "Access token: %s", token.AccessToken)
-	fmt.Fprintf(w, "Refresh token: %s", token.RefreshToken)
+	fmt.Fprintf(w, "Your Media Is Being Downlaoded You Can Close this Window Now ")
 	backup.ExecuteBackupService(token)
 
 }
