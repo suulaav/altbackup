@@ -1,0 +1,11 @@
+db:
+  dbUrl: "./database/backuplog.db"
+  dbType: "sqlite3"
+oAuth:
+  clientId: ""
+  clientSecret: ""
+  authUri: ""
+  redirectUris: [ "" ]
+  tokenUri: ""
+  projectId: ""
+  authProviderX509CertUrl: ""
