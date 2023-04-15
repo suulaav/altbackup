@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
+	"github.com/suulaav/altbackup/config"
 )
 
 func main() {
-	fmt.Println("hello world")
+	appConfig := config.GetConfig()
+	config.StartBackupService(appConfig)
 }
